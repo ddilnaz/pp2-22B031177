@@ -1,0 +1,55 @@
+#1
+def single_score(movie):
+    for m in movies:
+        if m["name"] == movie and m["imdb"] > 5.5:
+            imdb_score = True 
+        elif m["name"] == movie and m["imdb"] < 5.5:
+            imdb_score = "Sorry, score less than 5.5"
+    return imdb_score
+
+#2
+def higher_score(movie_name):
+    return ['True' for movie in movies if movie["name"] == movie_name and movie["imdb"] > 5.5] 
+
+def movies_above(movies):
+    movies_above = []
+    for m in movies:
+        if m["imdb"] > 5.5:
+            movies_above.append(m["name"])
+    return movies_above
+
+movies_above(movies)
+
+def MoviesGreaterList(movies): 
+    movies_greater = [movie["name"] for movie in movies if movie["imdb"] > 5.5] 
+    return movies_greater
+
+#3
+def movies_category(category):
+    movies_category = []
+    for m in movies:
+        if m["category"] == category:
+            movies_category.append(m["name"])
+    return movies_category
+romance_movies = movies_category("Romance")
+print romance_movies
+
+
+
+#3dudlicat
+def CategoryList(category): 
+  
+    category_list = [movie["name"] for movie in movies if movie["category"] == category]
+    return category_list 
+CategoryList("Romance")
+
+#4
+def movies_average_score(movies_list):
+    movies_scores = []
+    for movie in movies_list:
+        score = movie["imdb"]
+        movies_scores.append(score)
+    average_score = sum(movies_scores) / len(movies_scores)
+    return average_score
+total_movies_average = movies_average_score(movies)
+print(average)
