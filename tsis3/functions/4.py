@@ -1,6 +1,12 @@
-def is_prime(number):
-    for i in range(2, sqrt(number) + 1):
-        if number % i == 0:
-            return False
-
-    return number > 1
+def is_prime(i): 
+    if i<2: 
+        return False 
+    else: 
+        for x in range(2, i): 
+            if i % x == 0: 
+                return False 
+        return True 
+ 
+listt=[x for x in range(100)] 
+listt=list(filter(lambda x: is_prime(x), listt)) 
+print(listt)

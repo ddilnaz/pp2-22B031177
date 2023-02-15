@@ -2,6 +2,7 @@
 x = int(9)   
 y = int(7.84) 
 z = int("90") 
+print(type(z))
 
 #ex2
 x = float(6)     

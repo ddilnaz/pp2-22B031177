@@ -13,7 +13,7 @@ class Account:
             else: 
                 self.b = self.b - w 
                 print("Withdrawal Accepted \nYour current balance is {}".format(self.b)) 
-p = Account("Nurtileu") 
+p = Account("DILNAZ") 
 print(p) 
 p.deposit(36660) 
 x = int(input()) 
