@@ -1,6 +1,7 @@
 #https://github.com/ddilnaz/pp2-22B031177/blob/master/tsis4/json/sampledata.json
 import json
-x = open(r'C:\Users\ddilnaz\Desktop\git\tsis4\json\sampledata.json')
+#x = open(r'C:\Users\ddilnaz\Desktop\git\tsis4\json\sampledata.json')
+x = open('C:\Users\Lenovo\Desktop\PP2\tsis4\json\sampledata.json')
 y = json.load(x)
 print('''=======================================================================================
 DN                                                 Description           Speed    MTU" 
