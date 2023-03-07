@@ -5,8 +5,8 @@ def even(san):
             yield i
         i+=1
 san = int(input())
-for i in Even(n):
+for i in even(san):
   if i < san - 1:
-    print(i, end = ',' )
+    print(i , end = ' , ' )
   else:
     print(i)

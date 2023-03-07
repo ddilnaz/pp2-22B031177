@@ -1,12 +1,8 @@
 import re
-
 pattern = r'ab*'
-
-text = input()
-
+text = str(input())
 match = re.search(pattern, text)
-
 if match is not None :
-    print(match)
+    print("GOOD JOB")
 else :
-    print("does not match in pattern")
+    print("NO CONNECTON")

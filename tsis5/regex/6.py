@@ -2,5 +2,5 @@ import re
 
 text=input()
 
-ans=re.sub("[ ,.]","|",text)
+ans=re.sub(r"[ ,.]","|",text)
 print(ans)
