@@ -1,5 +1,5 @@
 import re
-pattern = r'ab*'
+pattern = r'^ab*'
 text = str(input())
 match = re.search(pattern, text)
 if match is not None :

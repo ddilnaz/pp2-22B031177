@@ -7,5 +7,5 @@ print(os.access(path, os.F_OK))
 print(os.access(path, os.R_OK))
 #is Wriable
 print(os.access(path, os.W_OK))
-#is Execuatble
+#is Execuatble выполнить
 print(os.access(path, os.X_OK))
