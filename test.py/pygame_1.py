@@ -1,15 +1,24 @@
-import pygame
-
+import pygame 
 pygame.init()
-HEIGHT , WIDTH = 500 , 500
-screen = pygame.display.set_mode((HEIGHT,WIDTH))
-pygame.display.set_caption("DIKON")
 
-running = True
-while running:
-    screen.fill(0,255,0)
-        for event in pygame.event.get():
+H = 600 
+W = 400
+WHITE = (255,255,255)
+sc = pygame.display.set_mode((H,W))
+pygame.display.set_caption("ART")
+run = True
+clock = pygame.time.Clock()
+
+pygame.draw.rect(sc , (255, 255 ,255) ,( H//2 , W//2 , 50 , 100), 5)
+pygame.display.flip()
+while 1:
+    for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            running  = False
-        if event.type == pygame.KEYDOWN:
-            print ('here')
+            exit()
+
+
+
+sc.fill(WHITE)
+screen.display.update()
+clock.tick(60)
+
