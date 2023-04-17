@@ -21,4 +21,3 @@ while 1:
 sc.fill(WHITE)
 screen.display.update()
 clock.tick(60)
-
