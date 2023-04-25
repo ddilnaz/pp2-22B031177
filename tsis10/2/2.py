@@ -31,19 +31,13 @@ GRAY  = (128, 128, 128)
 spawn_x = WIDTH // BLOCK_SIZE // 2
 spawn_y = HEIGHT // BLOCK_SIZE // 2
 
-save_image = pygame.image.load(r'C:\Users\Zhkai\Desktop\pyp\GitHub\pp2-22BD030547\tsis10\2\save.png')
-
-
-
+save_image = pygame.image.load(r'C:\Users\Lenovo\Desktop\PP2\tsis10\2\save.png')
 
 # defines point (cells) on screen
 class Point:
     def __init__(self, x, y):
         self.x = x
         self.y = y
-
-
-
 
 # defines body and head of snake on points
 class Snake():
@@ -133,15 +127,11 @@ class Snake():
                 return True
         return False
 
-
-
-
 class Food: # defines foods
     def __init__(self, x, y):
         self.color = GREEN
         self.weight = 1
         self.location = Point(x, y)
-
     
     def draw(self): #draws food rectangles
         pygame.draw.rect(
@@ -155,7 +145,6 @@ class Food: # defines foods
             )
         )
     
-
     def generate_new(self, snake_body):
         self.location.x = random.randint(0, WIDTH // BLOCK_SIZE - 1)
         self.location.y = random.randint(0, HEIGHT // BLOCK_SIZE - 1)
@@ -172,15 +161,13 @@ class Food: # defines foods
                 idx = len(snake_body) - 1
 
 
-
-
 class Obstacle(): # defines obstacles
     def __init__(self, level):
         if level == 0 or level > 40:
             level = 1
 
         self.blocks = []
-        path = r"C:\Users\Zhkai\Desktop\pyp\GitHub\pp2-22BD030547\tsis10\2\maps\\"
+        path = r"C:\Users\Lenovo\Desktop\PP2\tsis10\2\maps\\"
 
         with open(f"{path}map ({level}).csv", "r") as file:
             reader = csv.reader(file)

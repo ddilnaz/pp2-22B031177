@@ -1,8 +1,9 @@
 from configparser import ConfigParser
 
 
-def config(filename=r'C:\Users\Zhkai\Desktop\pyp\GitHub\pp2-22BD030547\tsis10\1\database.ini', section='postgresql'):
+def config(filename=r'C:\Users\Lenovo\Desktop\PP2\tsis10\1\database.ini', section='postgresql'):
     # create a parser
+    #C:\Users\Lenovo\Desktop\PP2\tsis10\1\database.ini
     parser = ConfigParser()
     # read config file
     parser.read(filename)
