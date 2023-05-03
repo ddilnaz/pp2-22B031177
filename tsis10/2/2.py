@@ -163,7 +163,7 @@ class Food: # defines foods
 
 class Obstacle(): # defines obstacles
     def __init__(self, level):
-        if level == 0 or level > 40:
+        if level == 0 or level > 2:
             level = 1
 
         self.blocks = []
@@ -187,7 +187,7 @@ class Obstacle(): # defines obstacles
         for block in self.blocks:
             pygame.draw.rect(
                 SCREEN,
-                GRAY,
+                RED,
                 pygame.Rect(
                     block.x * BLOCK_SIZE,
                     block.y * BLOCK_SIZE,

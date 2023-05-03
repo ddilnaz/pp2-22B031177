@@ -1,5 +1,5 @@
 from configparser import ConfigParser
-def config(filename=r'C:\Users\Lenovo\Desktop\PP2\tsis11\database.ini', section='postgresql'):
+def config(filename=r'C:\Users\Lenovo\Desktop\PP2\tsis11\databases.ini', section='postgresql'):
     # create a parser
     #C:\Users\Lenovo\Desktop\PP2\tsis11\database.ini', section='postgresql
     parser = ConfigParser()

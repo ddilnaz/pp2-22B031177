@@ -17,4 +17,4 @@ def config(filename=r'C:\Users\Lenovo\Desktop\PP2\tsis10\1\database.ini', sectio
     else:
         raise Exception(f'Section {section} not found in the {filename} file')
 
-    return 
+    return db

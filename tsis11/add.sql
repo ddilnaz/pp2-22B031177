@@ -11,7 +11,7 @@ CREATE OR REPLACE PROCEDURE add_many(IN list TEXT[], INOUT insert_res TEXT[])
 			LOOP
 				new_name   := name_number[1];
 				new_number := name_number[2];
-				old_number := (SELECT book.number FROM book WHERE book.name = new_name);
+				old_number := (SELECT PhoneBook.number FROM PhoneBook WHERE PhoneBook.name = new_name);
 				IF COUNT(old_number) != 0 AND old_number != new_number THEN
 					insertion = insertion || FORMAT('CONFLICT: CONTACT "%s" ALREADY HAS NUMBER "%s";'||chr(10)||'	INSERTION ATTEMPT: NUMBER = "%s"',
 						new_name, old_number, new_number);
